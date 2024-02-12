@@ -1,0 +1,164 @@
+.main-menu-space{
+    margin-right: 25px;
+    font-weight: bolder; 
+  }
+
+/* loader */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pulse-element {
+    animation: pulse 1s infinite;
+    max-width: 150px; /* Set the maximum width as per your requirement */
+  }
+
+  /* courses */
+
+.course-book{
+    font-weight: bolder;
+    color: black;
+}
+
+.course-discription{
+    color: #807575;
+}
+
+@media only screen and (max-width: 767px) {
+    .list-hide{
+       display: none;
+    }
+ }
+
+ .brand-logo{
+  max-width: 50px;
+ }
+
+
+
+  /* ******************************************************************************************** */
+  
+  .fadeInUp {
+    opacity: 0;
+    transform: translateY(50px); /* Initial translateY value */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  
+
+  .fadeInUp.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  @keyframes zoomInAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .zoomIn {
+    opacity: 0;
+    transform: scale(0.5); /* Initial scale value */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .zoomIn.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @keyframes zoomInAnimation {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .fadeRight,
+    .fadeLeft,
+    .flipRight,
+    .flipLeft {
+      opacity: 0;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fadeRight.active,
+    .fadeLeft.active,
+    .flipRight.active,
+    .flipLeft.active {
+      opacity: 1;
+      transform: translateX(0) rotateY(0);
+    }
+
+    .fadeRight {
+      transform: translateX(-50px);
+    }
+
+    .fadeLeft {
+      transform: translateX(50px);
+    }
+
+    .flipRight {
+      transform: perspective(400px) rotateY(-90deg);
+      transform-origin: left;
+    }
+
+    .flipLeft {
+      transform: perspective(400px) rotateY(90deg);
+      transform-origin: right;
+    }
+
+  /* ******************************************************************************************** */
+
+.launching-soon{
+  max-width: 50rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .launching-soon{
+    max-width: 20rem;
+  }
+}
+
+
+/* for current page active */
+/* .main-menu-3 ul li a.active {
+  background-color: #0c87ef;
+  color: #ffffff;
+} */
+
+.main-menu-3 ul li a.active::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+  background-color: #ebb741; /* optional: set the background color for ::before */
+}
+
+
+.mean-container .mean-nav ul li a.active {
+  background-color: #57636d;
+  color: #ffffff; 
+  border-radius: 2px;
+}
+
+.mean-container .mean-nav ul li a{
+  display: flex;
+  justify-content: center;
+}

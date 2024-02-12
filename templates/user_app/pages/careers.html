@@ -1,0 +1,44 @@
+{% extends "user_app/components/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+<main>
+
+    <!-- page title area start -->
+    <section class="page__title-area page__title-height page__title-overlay d-flex align-items-center"
+        data-background="{% static 'user_app/assets/img/page-title/page-title.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="page__title-wrapper mt-110">
+                        <h3 class="page__title">Careers</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Careers</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page title area end -->
+
+    <!-- course area start -->
+    <section class="course__area pb-50 pt-50">
+        <div class="d-flex justify-content-center">
+            <img src="{% static 'user_app/assets/mine/img/launching-soon.png' %}" alt="" srcset=""
+                class="launching-soon">
+        </div>
+    </section>
+    <!-- cta area end -->
+
+
+</main>
+
+{% include 'user_app/components/footer.html' %}
+
+{% endblock content %}

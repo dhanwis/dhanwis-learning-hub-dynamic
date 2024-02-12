@@ -1,0 +1,75 @@
+{% extends "admin_app/base.html" %}
+{% load static %}
+{% block content %}
+{% include 'admin_app/header.html' %}
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Companies</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li class="breadcrumb-item">Companies</li>
+                <li class="breadcrumb-item active">List</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Company List</h5>
+
+              <!-- Default Table -->
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Url</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for company in companies %}
+                    <tr>
+                      <th scope="row">{{ forloop.counter }}</th>
+                      <td>
+                        <a href="{{ company.image.url }}" target="_blank">
+                          <img src="{{ company.image.url }}" alt="" class="img-fluid" style="max-width: 100px;">
+                        </a>
+                      </td>
+                      <td>{{ company.url }}</td>
+                      
+                      <td>
+                        <span>
+                          <a href="{% url 'company-edit' company.id %}">
+                            <i class="bi bi-pencil-square"></i>
+                          </a>
+                        </span>
+                        <span>
+                          <a href="{% url 'company-delete' company.id %}">
+                            <i class="bi bi-trash3-fill"></i>
+                          </a>
+                        </span>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              
+              <!-- End Default Table Example -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+{% endblock content %}

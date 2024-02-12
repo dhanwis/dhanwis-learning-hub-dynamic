@@ -1,0 +1,904 @@
+{% extends "user_app/components/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+<main>
+
+   <!-- slider area start -->
+   <section class="slider__area p-relative">
+      <div class="slider__wrapper swiper-container">
+         <div class="swiper-wrapper">
+            <div class="single-slider swiper-slide slider__height slider__overlay d-flex align-items-center"
+               data-background="{% static 'user_app/assets/mine/img/land-page-img.jpg' %}">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-9 col-sm-10">
+                        <div class="slider__content">
+                           <span>Learn & Achieve</span>
+                           <h3 class="slider__title">Discover the perfect <span class="yellow-bg">mentor <img
+                                    src="{% static 'user_app/assets/img/shape/yellow-bg.png' %}" alt=""> </span> for
+                              you.</h3>
+
+                           <p>Connect with us and cultural institutions sharing their experience.</p>
+                           <a href="{% url 'about' %}" class="e-btn slider__btn">Ready to Begin?</a>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="single-slider swiper-slide slider__height slider__overlay d-flex align-items-center"
+               data-background="{% static 'user_app/assets/img/slider/slider-1.jpg' %}">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-9 col-sm-10">
+                        <div class="slider__content">
+                           <span>Learn & Achieve</span>
+                           <h3 class="slider__title">Fundamentals of music <span class="yellow-bg">theory <img
+                                    src="{% static 'user_app/assets/img/shape/yellow-bg.png' %}" alt=""> </span> Learn
+                           </h3>
+                           <p>Meet university,and cultural institutions, who'll share their experience.</p>
+                           <a href="{% url 'about' %}" class="e-btn slider__btn">Ready to get Started?</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="single-slider swiper-slide slider__height slider__overlay d-flex align-items-center"
+               data-background="{% static 'user_app/assets/img/slider/slider-2.jpg' %}">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-9 col-sm-10">
+                        <div class="slider__content">
+                           <span>Learn & Achieve</span>
+                           <h3 class="slider__title">Become a product <span class="yellow-bg">Manager <img
+                                    src="{% static 'user_app/assets/img/shape/yellow-bg.png' %}" alt=""> </span> &
+                              learn.</h3>
+                           <p>Meet university,and cultural institutions, who'll share their experience.</p>
+                           <a href="{% url 'about' %}" class="e-btn slider__btn">Ready to get Started?</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="single-slider swiper-slide slider__height slider__overlay d-flex align-items-center"
+               data-background="{% static 'user_app/assets/img/slider/slider-3.jpg' %}">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-9 col-sm-10">
+                        <div class="slider__content">
+                           <span>Learn & Achieve</span>
+                           <h3 class="slider__title">Launch your <span class="yellow-bg">online <img
+                                    src="{% static 'user_app/assets/img/shape/yellow-bg.png' %}" alt=""> </span>
+                              learning Platform.</h3>
+                           <p>Meet university,and cultural institutions, who'll share their experience.</p>
+                           <a href="{% url 'about' %}" class="e-btn slider__btn">Ready to get Started?</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-container slider__nav d-none d-md-block">
+         <!-- <div class="swiper-wrapper">
+                  <div class="slider__nav-item swiper-slide orange-bg" data-background="{% static 'user_app/assets/img/slider/nav/slider-nav-4.jpg' %}">
+                     <div class="slider__nav-content">
+                        <span>6 Courses</span>
+                        <h4>Programming Languages</h4>
+                     </div>
+                  </div>
+                  <div class="slider__nav-item swiper-slide blue-bg" data-background="{% static 'user_app/assets/img/slider/nav/slider-nav-1.jpg' %}">
+                     <div class="slider__nav-content">
+                        <span>4 Courses</span>
+                        <h4>Idea Discussion</h4>
+                     </div>
+                  </div>
+                  <div class="slider__nav-item swiper-slide pink-bg" data-background="{% static 'user_app/assets/img/slider/nav/slider-nav-2.jpg' %}">
+                     <div class="slider__nav-content">
+                        <span>8 Courses</span>
+                        <h4>Web Development</h4>
+                     </div>
+                  </div>
+                  <div class="slider__nav-item swiper-slide green-bg" data-background="{% static 'user_app/assets/img/slider/nav/slider-nav-3.jpg' %}">
+                     <div class="slider__nav-content">
+                        <span>8 Courses</span>
+                        <h4>System Administration</h4>
+                     </div>
+                  </div>
+               </div> -->
+      </div>
+   </section>
+   <!-- slider area end -->
+
+   <!-- services area start -->
+   <section class="services__area pt-115 pb-40 ">
+      <div class="container">
+         <div class="row fadeInUp">
+            <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 ">
+               <div class="section__title-wrapper section-padding mb-60 text-center">
+                  <h2 class="section__title">Why an <span class="yellow-bg">scholercity <img
+                           src="{% static 'user_app/assets/img/shape/yellow-bg-2.png' %}" alt=""></span> out of The
+                     ordinary</h2>
+                  <p>You don't have to struggle alone, you've got our assistance and help.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="row  ">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 zoomIn">
+               <div class="services__item blue-bg-4 mb-30">
+                  <div class="services__icon">
+                     <svg viewBox="0 0 24 24">
+                        <path
+                           d="m16 10c-1.431 0-2.861-.424-4.283-1.271-.442-.264-.717-.756-.717-1.286v-2.943c0-.276.224-.5.5-.5s.5.224.5.5v2.943c0 .176.09.343.229.426 2.538 1.514 5.004 1.514 7.541 0 .14-.083.23-.25.23-.426v-2.943c0-.276.224-.5.5-.5s.5.224.5.5v2.943c0 .529-.275 1.021-.718 1.285-1.421.848-2.851 1.272-4.282 1.272z" />
+                        <path
+                           d="m16 7c-.071 0-.143-.016-.209-.046l-6.5-3c-.178-.082-.291-.259-.291-.454s.113-.372.291-.454l6.5-3c.133-.061.286-.061.419 0l6.5 3c.177.082.29.259.29.454s-.113.372-.291.454l-6.5 3c-.066.03-.138.046-.209.046zm-5.307-3.5 5.307 2.449 5.307-2.449-5.307-2.449z" />
+                        <path
+                           d="m1.5 18c-.276 0-.5-.224-.5-.5v-15c0-1.379 1.122-2.5 2.5-2.5h6c.276 0 .5.224.5.5s-.224.5-.5.5h-6c-.827 0-1.5.673-1.5 1.5v15c0 .276-.224.5-.5.5z" />
+                        <path
+                           d="m7.5 20h-4c-1.378 0-2.5-1.121-2.5-2.5s1.122-2.5 2.5-2.5h14.5v-2.5c0-.276.224-.5.5-.5s.5.224.5.5v3c0 .276-.224.5-.5.5h-15c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5h4c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                        <path
+                           d="m18.5 20h-6c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5.5v-3.5c0-.276.224-.5.5-.5s.5.224.5.5v4c0 .276-.224.5-.5.5z" />
+                        <path
+                           d="m12.5 24c-.111 0-.222-.037-.313-.109l-2.187-1.75-2.188 1.75c-.15.12-.355.143-.529.06-.173-.084-.283-.259-.283-.451v-6c0-.276.224-.5.5-.5s.5.224.5.5v4.96l1.688-1.351c.183-.146.442-.146.625 0l1.687 1.351v-4.96c0-.276.224-.5.5-.5s.5.224.5.5v6c0 .192-.11.367-.283.45-.069.033-.143.05-.217.05z" />
+                        <path d="m14.5 18h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                     </svg>
+                  </div>
+                  <div class="services__content">
+                     <h3 class="services__title"><a href="{% url 'about' %}" style="font-size: 19px;">Real time <br>
+                           Industry based training</a></h3>
+                     <p>Arse over tit morish wind up gormless butty.!</p>
+
+                     <!-- <a href="{% url 'about' %}" class="link-btn-2">
+                              <i class="far fa-arrow-right"></i>
+                              <i class="far fa-arrow-right"></i>
+                           </a> -->
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 zoomIn">
+               <div class="services__item pink-bg mb-30">
+                  <div class="services__icon">
+                     <svg viewBox="0 0 24 24">
+                        <g>
+                           <path
+                              d="m23.5 10c-.1 0-.2 0-.3-.1l-2.5-1.7c-.2-.1-.5-.2-.8-.2h-6.4c-.8 0-1.5-.7-1.5-1.5v-5c0-.8.7-1.5 1.5-1.5h9c.8 0 1.5.7 1.5 1.5v8c0 .2-.1.4-.3.4 0 .1-.1.1-.2.1zm-10-9c-.3 0-.5.2-.5.5v5c0 .3.2.5.5.5h6.4c.5 0 1 .1 1.4.4l1.7 1.2v-7.1c0-.3-.2-.5-.5-.5z" />
+                        </g>
+                        <g>
+                           <path
+                              d="m.5 12c-.1 0-.2 0-.2-.1-.2 0-.3-.2-.3-.4v-8c0-.8.7-1.5 1.5-1.5h8c.3 0 .5.2.5.5s-.2.5-.5.5h-8c-.3 0-.5.2-.5.5v7.1l1.7-1.1c.4-.3.9-.5 1.4-.5h8.4c.3 0 .5.2.5.5s-.2.5-.5.5h-8.4c-.3 0-.6.1-.8.3l-2.5 1.7c-.1 0-.2 0-.3 0z" />
+                        </g>
+                        <g>
+                           <path
+                              d="m5.5 18c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm0-5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                        </g>
+                        <g>
+                           <path
+                              d="m10.5 24c-.3 0-.5-.2-.5-.5v-2c0-.8-.7-1.5-1.5-1.5h-6c-.8 0-1.5.7-1.5 1.5v2c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-2c0-1.4 1.1-2.5 2.5-2.5h6c1.4 0 2.5 1.1 2.5 2.5v2c0 .3-.2.5-.5.5z" />
+                        </g>
+                        <g>
+                           <path
+                              d="m18.5 18c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm0-5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                        </g>
+                        <g>
+                           <path
+                              d="m23.5 24c-.3 0-.5-.2-.5-.5v-2c0-.8-.7-1.5-1.5-1.5h-6c-.8 0-1.5.7-1.5 1.5v2c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-2c0-1.4 1.1-2.5 2.5-2.5h6c1.4 0 2.5 1.1 2.5 2.5v2c0 .3-.2.5-.5.5z" />
+                        </g>
+                     </svg>
+                  </div>
+                  <div class="services__content">
+                     <h3 class="services__title"><a href="{% url 'about' %}">1 to 1<br> Support</a></h3>
+                     <p>Arse over tit morish wind up gormless butty.!</p>
+
+                     <!-- <a href="{% url 'about' %}" class="link-btn-2">
+                              <i class="far fa-arrow-right"></i>
+                              <i class="far fa-arrow-right"></i>
+                           </a> -->
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 zoomIn">
+               <div class="services__item purple-bg mb-30">
+                  <div class="services__icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-building" viewBox="0 0 16 16">
+                        <path
+                           d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                        <path
+                           d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                     </svg>
+                  </div>
+                  <div class="services__content">
+                     <h3 class="services__title" style="font-size: 21px;"><a href="{% url 'about' %}">Job <br> Placement
+                           assistance</a></h3>
+                     <p>Arse over tit morish wind up gormless butty.!</p>
+
+                     <!-- <a href="{% url 'about' %}" class="link-btn-2">
+                              <i class="far fa-arrow-right"></i>
+                              <i class="far fa-arrow-right"></i>
+                           </a> -->
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 zoomIn">
+               <div class="services__item green-bg mb-30">
+                  <div class="services__icon">
+                     <svg viewBox="0 0 512 512">
+                        <path class="st0"
+                           d="M256,512c-1.6,0-3.1-0.3-4.6-1c-53.3-25.3-120.8-27.2-212.3-5.7c-9.6,2.1-19.5-0.1-27.1-6.3  c-7.6-6.1-12-15.3-12-25V130.3c0-12,6.9-23.2,17.6-28.5c45.1-22.8,84.5-35.1,120.5-37.6c5.7-0.3,11,4,11.4,9.9  c0.4,5.9-4,11-9.9,11.4c-33.1,2.3-69.9,13.9-112.4,35.4c-3.6,1.8-5.9,5.5-5.9,9.5V474c0,3.3,1.5,6.4,4,8.4c1.5,1.2,4.7,3.1,9,2.1  c93.8-22.1,164.5-20.5,221.6,5.1c57.1-25.5,127.8-27.1,221.8-5c4.4,0.9,7.4-0.9,8.9-2.1c2.6-2,4-5.1,4-8.4V130.3  c0-4-2.3-7.7-5.8-9.4c-47-23.7-87-35.4-122.5-35.8c-5.9-0.1-10.6-4.9-10.6-10.8c0.1-5.8,4.8-10.6,10.7-10.6h0.1  c38.8,0.4,81.9,12.9,131.9,38.1c10.6,5.3,17.6,16.5,17.6,28.5V474c0,9.8-4.4,18.9-12,25c-7.6,6.1-17.5,8.3-27,6.3  c-91.6-21.5-159.1-19.8-212.4,5.6C259.1,511.7,257.6,512,256,512L256,512z" />
+                        <path class="st0"
+                           d="M256,506.7c-5.9,0-10.7-4.8-10.7-10.7V266.7c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7V496  C266.7,501.9,261.9,506.7,256,506.7z" />
+                        <path class="st0"
+                           d="M96,341.3c-1,0-2.1-0.1-3.2-0.5c-5.6-1.8-8.8-7.7-7-13.4C134.1,172.8,193.5,67.4,267.5,5.3  c6.1-5.1,14.4-6.6,21.6-4.1c7,2.5,12.1,8.4,13.6,15.9c9.9,50.6,8.2,93.7-5.2,128.2c-1.1,2.9-3.4,5.2-6.4,6.2c-2.9,1-6.2,0.8-8.9-0.8  l-26.3-15v61.4c0,3.3-1.6,6.5-4.3,8.5c-28.2,21.1-66.3,33.5-113.3,36.6c-11.2,28.3-22,58.8-32.2,91.6  C104.7,338.4,100.5,341.3,96,341.3L96,341.3z M281.8,21.3c-51.7,43.3-96,108.8-134.3,198.8c35.6-3.6,64.9-13.2,87.2-28.5v-74.3  c0-3.8,2-7.3,5.3-9.2c3.2-1.9,7.3-1.9,10.6,0l31,17.7C289.7,97,289.8,62,281.8,21.3L281.8,21.3z" />
+                     </svg>
+                  </div>
+                  <div class="services__content">
+                     <h3 class="services__title" style="font-size: 20px;"><a href="{% url 'about' %}">Extra skill
+                           <br>Development training</a></h3>
+                     <p>Arse over tit morish wind up gormless butty.!</p>
+
+                     <!-- <a href="{% url 'about' %}" class="link-btn-2">
+                              <i class="far fa-arrow-right"></i>
+                              <i class="far fa-arrow-right"></i>
+                           </a> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- services area end -->
+
+   <!-- about area start -->
+   <section class="about__area pt-90 pb-150">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 fadeInUp">
+               <div class="about__thumb-wrapper">
+
+                  <div class="about__review">
+                     <h5> <span>8,200+</span> five ster reviews</h5>
+                  </div>
+                  <div class="about__thumb ml-100">
+                     <img src="{% static 'user_app/assets/img/about/about.jpg' %}" alt="">
+                  </div>
+                  <div class="about__banner mt--210">
+                     <img src="{% static 'user_app/assets/img/about/about-banner.jpg' %}" alt="">
+                  </div>
+                  <!-- <div class="about__student ml-270 mt--80">
+                           <a href="#">
+                              <img src="{% static 'user_app/assets/img/about/student-4.jpg' %}" alt="">
+                              <img src="{% static 'user_app/assets/img/about/student-3.jpg' %}" alt="">
+                              <img src="{% static 'user_app/assets/img/about/student-2.jpg' %}" alt="">
+                              <img src="{% static 'user_app/assets/img/about/student-1.jpg' %}" alt="">
+                           </a>
+                           <p>Join over <span>4,000+</span> students</p>
+                        </div> -->
+               </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 fadeInUp">
+               <div class="about__content pl-70 pr-60 pt-25">
+                  <div class="section__title-wrapper mb-25">
+                     <h2 class="section__title">Achieve your <br><span class="yellow-bg-big">Goals <img
+                              src="{% static 'user_app/assets/img/shape/yellow-bg-2.png' %}" alt=""></span> with Educal
+                     </h2>
+                     <p>Lost the plot bobby such a fibber bleeding bits and bobs don't get shirty with me bugger all
+                        mate chinwag super pukka william barney, horse play buggered.</p>
+                  </div>
+                  <div class="about__list mb-35">
+                     <ul>
+                        <li class="d-flex align-items-center"> <i class="icon_check"></i> Upskill your organization.
+                        </li>
+                        <li class="d-flex align-items-center"> <i class="icon_check"></i> Access more then 100K online
+                           courses</li>
+                        <li class="d-flex align-items-center"> <i class="icon_check"></i> Learn the latest skills</li>
+                     </ul>
+                  </div>
+                  <a href="contact.html" class="e-btn e-btn-border">apply now</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- about area end -->
+
+   <!-- brand area start -->
+   <!-- <section class="brand__area pb-110">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="brand__content text-center">
+                        <h3 class="brand__title">Trusted by 100 world's best companies</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="brand__slider swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/mine/img/nizamia.png' %}" alt="">
+                                 62x57
+                             </div>
+                          </div>
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/mine/img/ashra-medicals.png' %}" alt="">
+                                 75x50
+                             </div>
+                          </div>
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/img/brand/brand-3.png' %}" alt="">
+                             </div>
+                          </div>
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/img/brand/brand-4.png' %}" alt="">
+                             </div>
+                          </div>
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/img/brand/brand-5.png' %}" alt="">
+                             </div>
+                          </div>
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/img/brand/brand-6.png' %}" alt="">
+                             </div>
+                          </div>
+                          <div class="swiper-slide">
+                             <div class="brand__item">
+                                 <img src="{% static 'user_app/assets/img/brand/brand-6.png' %}" alt="">
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="brand__more text-center">
+                        <a href="{% url 'about' %}" class="link-btn">
+                           View all partners
+                           <i class="far fa-arrow-right"></i>
+                           <i class="far fa-arrow-right"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+   <!-- brand area end -->
+
+
+   <section class="brand__area pb-110">
+      <div class="container">
+         <div class="row fadeInUp">
+            <div class="col-xxl-12">
+               <div class="brand__content text-center">
+                  <h3 class="brand__title">Trusted by 100 world's best companies</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row" style="background-color: #8080804d;
+                  border-radius: 10px;
+                  padding-top: 15px;
+                  padding-bottom: 20px;">
+
+            {% for company in companies %}
+            <div class="col-6 col-md-2  zoomIn" style="display: flex;
+                        justify-content: center;">
+               <a href="{{ company.url }}">
+                  <img src="{{ company.image.url}}" alt="" style="max-width: 160px;
+                           padding-top: 20px;">
+               </a>
+            </div>
+            {% endfor %}
+
+
+
+         </div>
+
+
+      </div>
+   </section>
+
+   <!-- course area start -->
+   <section class="course__area grey-bg pt-115 pb-120">
+      <div class="container">
+         <div class="row align-items-end">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 fadeInUp">
+               <div class="section__title-wrapper mb-60">
+                  <h2 class="section__title">Online<span class="yellow-bg"> Courses <img
+                           src="{% static 'user_app/assets/img/shape/yellow-bg-2.png' %}" alt=""> </span> <br> For
+                     anyone, anywhere
+                  </h2>
+                  <p>You don't have to struggle alone, you've got our assistance and help.</p>
+               </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-4 fadeInUp">
+               <div class="category__more mb-60 float-md-end fix">
+                  <a href="courses.html" class="link-btn">
+                     View All Courses
+                     <i class="far fa-arrow-right"></i>
+                     <i class="far fa-arrow-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="row ">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 fadeInUp">
+               <div class="course__item course__item-2 white-bg mb-30 transition-3">
+                  <div class="course__thumb fix w-img">
+                     <a href="course-details.html">
+                        <img src="{% static 'user_app/assets/img/course/home-3/course-1.jpg' %}" alt="">
+                     </a>
+                  </div>
+                  <div class="course__content-2">
+                     <h3 class="course__title-2"><a href="course-details.html">Product Manager Learn the Skills &
+                           job.</a></h3>
+                     <p>Top instructors from around the world teach millions of students on Quillow. Get unlimited.</p>
+                     <div class="course__bottom d-sm-flex justify-content-between align-items-center">
+                        <div class="course__teacher-2 d-flex align-items-center">
+                           <div class="course__teacher-thumb-2 mr-20">
+                              <img src="{% static 'user_app/assets/img/course/teacher/home-3/teacher-1.jpg' %}" alt="">
+                              <div class="course__teacher-rating">
+                                 <i class="icon_star"></i>
+                              </div>
+                           </div>
+                           <div class="course__teacher-info">
+                              <h6><a href="instructor-details.html">Jim Séchen</a></h6>
+                              <span>Product Designer</span>
+                           </div>
+                        </div>
+                        <div class="course__meta">
+                           <div class="course__lesson">
+                              <span><i class="far fa-book-alt"></i>43 Lesson</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 fadeInUp">
+               <div class="course__item course__item-2 white-bg mb-30 transition-3">
+                  <div class="course__thumb fix w-img">
+                     <a href="course-details.html">
+                        <img src="{% static 'user_app/assets/img/course/home-3/course-2.jpg' %}" alt="">
+                     </a>
+                  </div>
+                  <div class="course__content-2">
+                     <h3 class="course__title-2"><a href="course-details.html">The Importance Of Intrinsic for
+                           Students.</a></h3>
+                     <p>Top instructors from around the world teach millions of students on Quillow. Get unlimited.</p>
+                     <div class="course__bottom d-sm-flex justify-content-between align-items-center">
+                        <div class="course__teacher-2 d-flex align-items-center">
+                           <div class="course__teacher-thumb-2 mr-20">
+                              <img src="{% static 'user_app/assets/img/course/teacher/home-3/teacher-2.jpg' %}" alt="">
+                              <div class="course__teacher-rating">
+                                 <i class="icon_star"></i>
+                              </div>
+                           </div>
+                           <div class="course__teacher-info">
+                              <h6><a href="instructor-details.html">Craig Weber</a></h6>
+                              <span>UX Designer</span>
+                           </div>
+                        </div>
+                        <div class="course__meta">
+                           <div class="course__lesson">
+                              <span><i class="far fa-book-alt"></i>30 Lesson</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- course area end -->
+
+   <!-- teacher area start -->
+   <!-- <section class="teacher__area pt-115 pb-100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-6 offset-xxl-3">
+                     <div class="section__title-wrapper text-center mb-60">
+                        <h2 class="section__title">Our Most <br>
+                           Popular <span class="yellow-bg"> Teachers <img src="{% static 'user_app/assets/img/shape/yellow-bg-2.png' %}" alt="">  </span> <br>
+                        </h2>
+                        <p>You don't have to struggle alone, you've got our assistance and help.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                     <div class="teacher__item text-center grey-bg-5 transition-3 mb-30">
+                        <div class="teacher__thumb w-img fix">
+                           <a href="#">
+                              <img src="{% static 'user_app/assets/img/teacher/teacger-1.jpg' %}" alt="">
+                           </a>
+                        </div>
+                        <div class="teacher__content">
+                           <h3 class="teacher__title"><a href="instructor-details.html">Lillian Walsh,</a></h3> 
+                           <span> CO Founder</span>
+
+                           <div class="teacher__social">
+                              <ul>
+                                 <li><a href="#"><i class="social_facebook"></i></a></li>
+                                 <li><a href="#"><i class="social_twitter"></i></a></li>
+                                 <li><a href="#"><i class="social_vimeo"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                     <div class="teacher__item text-center grey-bg-5 transition-3 mb-30">
+                        <div class="teacher__thumb w-img fix">
+                           <a href="#">
+                              <img src="{% static 'user_app/assets/img/teacher/teacher-2.jpg' %}" alt="">
+                           </a>
+                        </div>
+                        <div class="teacher__content">
+                           <h3 class="teacher__title"><a href="instructor-details.html">Kelly Franklin,</a></h3> 
+                           <span>Desginer</span>
+
+                           <div class="teacher__social">
+                              <ul>
+                                 <li><a href="#"><i class="social_facebook"></i></a></li>
+                                 <li><a href="#"><i class="social_twitter"></i></a></li>
+                                 <li><a href="#"><i class="social_vimeo"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                     <div class="teacher__item text-center grey-bg-5 transition-3 mb-30">
+                        <div class="teacher__thumb w-img fix">
+                           <a href="#">
+                              <img src="{% static 'user_app/assets/img/teacher/teacher-3.jpg' %}" alt="">
+                           </a>
+                        </div>
+                        <div class="teacher__content">
+                           <h3 class="teacher__title"><a href="instructor-details.html">Hilary Ouse,</a></h3> 
+                           <span>Markater</span>
+
+                           <div class="teacher__social">
+                              <ul>
+                                 <li><a href="#"><i class="social_facebook"></i></a></li>
+                                 <li><a href="#"><i class="social_twitter"></i></a></li>
+                                 <li><a href="#"><i class="social_vimeo"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="teacher__more text-center mt-30">
+                        <a href="contact.html" class="e-btn e-btn-border e-btn-5">Become an Instructor</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+   <!-- teacher area end -->
+
+   <!-- cta area start -->
+   <!-- <section class="cta__area pb-150">
+            <div class="container">
+               <div class="cta__inner-3 p-relative grey-bg-2 pt-75 pb-75 fix">
+                  <div class="cta__shape-3">
+                     <img class="cta-2" src="{% static 'user_app/assets/img/cta/cta-shape-1.png' %}" alt="">
+                     <img class="cta-3" src="{% static 'user_app/assets/img/cta/cta-shape-2.png' %}" alt="">
+                  </div>
+                  <div class="row">
+                     <div class="col-xxl-12">
+                        <div class="cta__content text-center p-relative">
+                           <span>Coming June</span>
+                           <h3 class="cta__title-2">Built to stand out.</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xxl-12">
+                        <div class="cta__form grey-bg-2">
+                           <div class="cta__form-inner">
+                              <form action="#">
+                                 <input type="text" placeholder="Your Name">
+                                 <input type="email" placeholder="Your Email">
+                                 <button type="submit" class="e-btn e-btn-6">Take A Free Course</button>
+                              </form>
+                           </div>
+                           <div class="cta__agree d-flex align-items-center">
+                              <input class="e-check-input" type="checkbox" id="e-agree">
+                              <label class="e-check-label" for="e-agree">By signing up you agree to our <a href="#"> Terms & Conditions</a></label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+   <!-- cta area start -->
+
+   <!-- testimonial area start -->
+   <section class="testimonial__area pt-145 pb-150 "
+      data-background="{% static 'user_app/assets/mine/img/6045432.jpg' %}">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 fadeInUp">
+               <div class="testimonial__slider-3">
+                  <h3 class="testimonial__title">Why <br> Choose Us</h3>
+                  <div class="testimonial__slider-wrapper swiper-container testimonial-text mb-35">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="testimonial__item-3">
+                              <p>“After I started learning design with Quillow, I realized that I had improved to very
+                                 advanced levels. While I am studying at my university, I design as an additional
+                                 income and I am sure that I will do this professionally.”</p>
+
+                              <div class="testimonial__info-2">
+                                 <h4>James Lee,</h4>
+                                 <span>Student @Educal University</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="testimonial__item-3">
+                              <p>“After I started learning design with Quillow, I realized that I had improved to very
+                                 advanced levels. While I am studying at my university, I design as an additional
+                                 income and I am sure that I will do this professionally.”</p>
+
+                              <div class="testimonial__info-2">
+                                 <h4>James Lee,</h4>
+                                 <span>Student @Educal University</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="testimonial__item-3">
+                              <p>“After I started learning design with Quillow, I realized that I had improved to very
+                                 advanced levels. While I am studying at my university, I design as an additional
+                                 income and I am sure that I will do this professionally.”</p>
+
+                              <div class="testimonial__info-2">
+                                 <h4>James Lee,</h4>
+                                 <span>Student @Educal University</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="testimonial__item-3">
+                              <p>“After I started learning design with Quillow, I realized that I had improved to very
+                                 advanced levels. While I am studying at my university, I design as an additional
+                                 income and I am sure that I will do this professionally.”</p>
+
+                              <div class="testimonial__info-2">
+                                 <h4>James Lee,</h4>
+                                 <span>Student @Educal University</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-container testimonial-nav">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="testimonial__nav-thumb">
+                              <img src="{% static 'user_app/assets/img/testimonial/home-3/testi-1.jpg' %}" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="testimonial__nav-thumb">
+                              <img src="{% static 'user_app/assets/img/testimonial/home-3/testi-2.jpg' %}" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="testimonial__nav-thumb">
+                              <img src="{% static 'user_app/assets/img/testimonial/home-3/testi-3.jpg' %}" alt="">
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="testimonial__nav-thumb">
+                              <img src="{% static 'user_app/assets/img/testimonial/home-3/testi-2.jpg' %}" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 fadeInUp">
+               <div class="testimonial__video ml-70 fix">
+                  <div class="testimonial__thumb-3">
+                     <!-- <iframe src="https://www.youtube.com/embed/Rr0uFzAOQus" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> -->
+                  </div>
+                  <div class="testimonial__video-content d-sm-flex">
+                     <div class="testimonial__video-icon mr-20 mb-20">
+                        <span>
+                           <svg version="1.1" id="educal-youtube" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                              style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                              <path class="st0"
+                                 d="M22,11.1V12c0,5.5-4.5,10-10,10C6.5,22,2,17.5,2,12C2,6.5,6.5,2,12,2c1.4,0,2.8,0.3,4.1,0.9" />
+                              <polyline class="st0" points="22,4 12,14 9,11 " />
+                           </svg>
+                        </span>
+                     </div>
+                     <div class="testimonial__video-text">
+                        <h4>Course Outcome</h4>
+                        <p>Faff about A bit of how's your father getmate cack codswallop crikey argy-bargy cobblers lost
+                           his bottle.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- testimonial area end -->
+
+   <!-- why area start -->
+   <section class="why__area pt-125">
+      <div class="container ">
+         <div class="row align-items-center">
+            <div class="col-xxl-5 offset-xxl-1 col-xl-5 offset-xl-1 col-lg-6 col-md-8 fadeInUp">
+               <div class="why__content pr-50 mt-40">
+                  <div class="section__title-wrapper mb-30">
+                     <span class="section__sub-title">Why Choses Me</span>
+                     <h2 class="section__title">Tools for <span class="yellow-bg yellow-bg-big">Teachers<img
+                              src="{% static 'user_app/assets/img/shape/yellow-bg.png' %}" alt=""></span> and Learners
+                     </h2>
+                     <p>Oxford chimney pot Eaton faff about blower blatant brilliant, bubble and squeak he legged it
+                        Charles bonnet arse at public school bamboozled.</p>
+                  </div>
+                  <div class="why__btn">
+                     <a href="contact.html" class="e-btn e-btn-3 mr-30">Join for Free</a>
+                     <a href="{% url 'about' %}" class="link-btn">
+                        Learn More
+                        <i class="far fa-arrow-right"></i>
+                        <i class="far fa-arrow-right"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 fadeInUp">
+               <div class="why__thumb">
+                  <img src="{% static 'user_app/assets/img/why/why.png' %}" alt="">
+                  <img class="why-green" src="{% static 'user_app/assets/img/why/why-shape-green.png' %}" alt="">
+                  <img class="why-pink" src="{% static 'user_app/assets/img/why/why-shape-pink.png' %}" alt="">
+                  <img class="why-dot" src="{% static 'user_app/assets/img/why/why-shape-dot.png' %}" alt="">
+                  <img class="why-line" src="{% static 'user_app/assets/img/why/why-shape-line.png' %}" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- why area end -->
+
+
+   <!-- blog area start -->
+   <section class="blog__area pt-115 pb-130">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-6 offset-xxl-3 fadeInUp">
+               <div class="section__title-wrapper text-center mb-60">
+                  <h2 class="section__title">We share <br>
+                     Our <span class="yellow-bg yellow-bg-big">thoughts <img
+                           src="{% static 'user_app/assets/img/shape/yellow-bg.png' %}" alt=""></span>on design</h2>
+                  <p>You don't have to struggle alone, you've got our assistance and help.</p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 fadeInUp">
+               <div class="blog__item white-bg mb-30 transition-3 fix">
+                  <div class="blog__thumb w-img fix">
+                     <a href="blog-details.html">
+                        <img src="{% static 'user_app/assets/img/blog/blog-1.jpg' %}" alt="">
+                     </a>
+                  </div>
+                  <div class="blog__content">
+                     <div class="blog__tag">
+                        <a href="#">Art & Design</a>
+                     </div>
+                     <h3 class="blog__title"><a href="blog-details.html">The Challenge Of Global Learning In Public
+                           Education</a></h3>
+
+                     <div class="blog__meta d-flex align-items-center justify-content-between">
+                        <div class="blog__author d-flex align-items-center">
+                           <div class="blog__author-thumb mr-10">
+                              <img src="{% static 'user_app/assets/img/blog/author/author-1.jpg' %}" alt="">
+                           </div>
+                           <div class="blog__author-info">
+                              <h5>Jim Séchen</h5>
+                           </div>
+                        </div>
+                        <div class="blog__date d-flex align-items-center">
+                           <i class="fal fa-clock"></i>
+                           <span>April 02, 2022</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 fadeInUp">
+               <div class="blog__item white-bg mb-30 transition-3 fix">
+                  <div class="blog__thumb w-img fix">
+                     <a href="blog-details.html">
+                        <img src="{% static 'user_app/assets/img/blog/blog-2.jpg' %}" alt="">
+                     </a>
+                  </div>
+                  <div class="blog__content">
+                     <div class="blog__tag">
+                        <a href="#" class="purple">Marketing</a>
+                     </div>
+                     <h3 class="blog__title"><a href="blog-details.html">Exactly How Technology Can Make Reading
+                           Better</a></h3>
+
+                     <div class="blog__meta d-flex align-items-center justify-content-between">
+                        <div class="blog__author d-flex align-items-center">
+                           <div class="blog__author-thumb mr-10">
+                              <img src="{% static 'user_app/assets/img/blog/author/author-2.jpg' %}" alt="">
+                           </div>
+                           <div class="blog__author-info">
+                              <h5>Barry Tone</h5>
+                           </div>
+                        </div>
+                        <div class="blog__date d-flex align-items-center">
+                           <i class="fal fa-clock"></i>
+                           <span>July 02, 2022</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 fadeInUp">
+               <div class="blog__item white-bg mb-30 transition-3 fix">
+                  <div class="blog__thumb w-img fix">
+                     <a href="blog-details.html">
+                        <img src="{% static 'user_app/assets/img/blog/blog-3.jpg' %}" alt="">
+                     </a>
+                  </div>
+                  <div class="blog__content">
+                     <div class="blog__tag">
+                        <a href="#" class="pink">UX Design</a>
+                     </div>
+                     <h3 class="blog__title"><a href="blog-details.html">New Chicago school budget relies on state
+                           pension</a></h3>
+
+                     <div class="blog__meta d-flex align-items-center justify-content-between">
+                        <div class="blog__author d-flex align-items-center">
+                           <div class="blog__author-thumb mr-10">
+                              <img src="{% static 'user_app/assets/img/blog/author/author-3.jpg' %}" alt="">
+                           </div>
+                           <div class="blog__author-info">
+                              <h5>Barry Tone</h5>
+                           </div>
+                        </div>
+                        <div class="blog__date d-flex align-items-center">
+                           <i class="fal fa-clock"></i>
+                           <span>July 02, 2022</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- blog area end -->
+
+</main>
+
+
+{% include 'user_app/components/footer.html' %}
+
+{% endblock content %}
